@@ -1,0 +1,12 @@
+img {
+    width: 150px;
+    border-radius: 500px;
+    border: none;
+    outline: none;
+    color: transparent;
+}
+
+/* .error {
+    background-color: yellow;
+    color: red;
+} */

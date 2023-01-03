@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>small bank</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./logo.jpg" />
+    <!-- <link rel="stylesheet" href="./botstrap.css" /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid rounded-5">
+      <!--the main container starts here-->
+      <header class="header bg-primary d-flex rounded-4">
+        <img src="./logo.jpg" class="img cirle-5" />
+        <nav class="navbar d-flex justify-content-between">
+          <ul class="ul list-unstyled d-flex">
+            <li class="li text-light m-5">Somaali Banks</li>
+            <li class="li text-light m-5">My Account</li>
+            <li class="li text-light m-5">Balance</li>
+            <li class="li text-light m-5">$1000.00</li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container m-5">
+        <form
+          action="thanks.html"
+          class="form border border-2 rounded-4"
+          id="form"
+        >
+          <h1 class="text text-success text-center font-monospace">
+            Account Registration
+          </h1>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="Acount name ">Account Name</label>
+                <input type="text" class="form-control" id="acount-name" />
+                <span class="text text-danger" id="span-1"></span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="Acount number">Account Number</label>
+                <input type="number" class="form-control" id="acount-number" />
+                <span class="text text-danger" id="span-2"></span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="owner name">Owner Name</label>
+                <input type="text" class="form-control" id="owner-name" />
+                <span class="text text-danger" id="span-3"> </span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="owner number">Owner Number</label>
+                <input type="number" class="form-control" id="owner-number" />
+                <span class="text text-danger" id="span-4"></span>
+              </div>
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-success p-2 w-25 mt-3"
+            id="save-btn"
+          >
+            Save
+          </button>
+          <button
+            type="button"
+            class="btn btn-danger p-2 w-25 mt-3"
+            id="clear-btn"
+            onclick="clearInputData()"
+          >
+            Clear
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="container-fluid mt-5 bg-dark p-5">
+      <footer>
+        <p class="text text-light text-center">
+          Somali Bnaks waa bank caalamiya oo ka shaqeeya dhamaan wadamada
+          caalamka
+        </p>
+      </footer>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
